@@ -28,7 +28,7 @@ namespace MQTTnetServer
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-
+            Console.WriteLine("MQTT program start!");
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -37,7 +37,10 @@ namespace MQTTnetServer
             mStartMqttServerThread = new Thread(StartMqttServer);
             mStartMqttServerThread.Start();
 
-            timer1.Enabled = true;
+            if (cbxReadCmd.Checked)
+            {
+                timer1.Enabled = true;
+            }
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -111,7 +114,10 @@ namespace MQTTnetServer
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            var inputString = Console.ReadLine().ToLower().Trim();
+            string command = Console.ReadLine();
+            if (command == null)
+                return;
+            var inputString = command.ToLower().Trim();
 
             if (inputString == "exit")
             {

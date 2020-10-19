@@ -48,6 +48,7 @@
             this.txtSubTopic.Name = "txtSubTopic";
             this.txtSubTopic.Size = new System.Drawing.Size(419, 25);
             this.txtSubTopic.TabIndex = 0;
+            this.txtSubTopic.Text = "Test Subscribe";
             // 
             // lblTopic
             // 
@@ -102,6 +103,7 @@
             this.txtPubTopic.Name = "txtPubTopic";
             this.txtPubTopic.Size = new System.Drawing.Size(419, 25);
             this.txtPubTopic.TabIndex = 5;
+            this.txtPubTopic.Text = "Public Topic";
             // 
             // lblSendMessage
             // 
@@ -119,6 +121,7 @@
             this.txtSendMessage.Name = "txtSendMessage";
             this.txtSendMessage.Size = new System.Drawing.Size(519, 75);
             this.txtSendMessage.TabIndex = 7;
+            this.txtSendMessage.Text = "Hello World!";
             // 
             // button1
             // 

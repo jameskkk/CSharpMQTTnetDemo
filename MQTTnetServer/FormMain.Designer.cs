@@ -32,11 +32,12 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.cbxReadCmd = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(49, 27);
+            this.btnStart.Location = new System.Drawing.Point(37, 27);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(102, 42);
             this.btnStart.TabIndex = 0;
@@ -58,17 +59,29 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // cbxReadCmd
+            // 
+            this.cbxReadCmd.AutoSize = true;
+            this.cbxReadCmd.Location = new System.Drawing.Point(37, 106);
+            this.cbxReadCmd.Name = "cbxReadCmd";
+            this.cbxReadCmd.Size = new System.Drawing.Size(119, 19);
+            this.cbxReadCmd.TabIndex = 2;
+            this.cbxReadCmd.Text = "Read Command";
+            this.cbxReadCmd.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 305);
+            this.ClientSize = new System.Drawing.Size(340, 305);
+            this.Controls.Add(this.cbxReadCmd);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Name = "FormMain";
             this.Text = "MQTTnet Server";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,6 +90,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.CheckBox cbxReadCmd;
     }
 }
 
