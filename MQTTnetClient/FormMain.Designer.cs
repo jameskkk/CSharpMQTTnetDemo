@@ -48,7 +48,7 @@
             this.txtSubTopic.Name = "txtSubTopic";
             this.txtSubTopic.Size = new System.Drawing.Size(419, 25);
             this.txtSubTopic.TabIndex = 0;
-            this.txtSubTopic.Text = "Test Subscribe";
+            this.txtSubTopic.Text = "TestSubscribe";
             // 
             // lblTopic
             // 
@@ -103,7 +103,7 @@
             this.txtPubTopic.Name = "txtPubTopic";
             this.txtPubTopic.Size = new System.Drawing.Size(419, 25);
             this.txtPubTopic.TabIndex = 5;
-            this.txtPubTopic.Text = "Public Topic";
+            this.txtPubTopic.Text = "TestSubscribe";
             // 
             // lblSendMessage
             // 
