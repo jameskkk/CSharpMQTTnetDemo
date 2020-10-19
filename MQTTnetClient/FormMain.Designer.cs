@@ -53,7 +53,7 @@
             // lblTopic
             // 
             this.lblTopic.AutoSize = true;
-            this.lblTopic.Location = new System.Drawing.Point(12, 9);
+            this.lblTopic.Location = new System.Drawing.Point(12, 11);
             this.lblTopic.Name = "lblTopic";
             this.lblTopic.Size = new System.Drawing.Size(70, 15);
             this.lblTopic.TabIndex = 1;
@@ -61,16 +61,19 @@
             // 
             // txtReceiveMessage
             // 
+            this.txtReceiveMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtReceiveMessage.Location = new System.Drawing.Point(12, 81);
             this.txtReceiveMessage.Multiline = true;
             this.txtReceiveMessage.Name = "txtReceiveMessage";
-            this.txtReceiveMessage.Size = new System.Drawing.Size(519, 75);
+            this.txtReceiveMessage.Size = new System.Drawing.Size(519, 77);
             this.txtReceiveMessage.TabIndex = 2;
             // 
             // lblReceiveMessage
             // 
             this.lblReceiveMessage.AutoSize = true;
-            this.lblReceiveMessage.Location = new System.Drawing.Point(12, 63);
+            this.lblReceiveMessage.Location = new System.Drawing.Point(12, 62);
             this.lblReceiveMessage.Name = "lblReceiveMessage";
             this.lblReceiveMessage.Size = new System.Drawing.Size(107, 15);
             this.lblReceiveMessage.TabIndex = 3;
@@ -78,6 +81,7 @@
             // 
             // btnSubscribe
             // 
+            this.btnSubscribe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubscribe.Location = new System.Drawing.Point(438, 32);
             this.btnSubscribe.Name = "btnSubscribe";
             this.btnSubscribe.Size = new System.Drawing.Size(93, 24);
@@ -88,8 +92,9 @@
             // 
             // lblPubTopic
             // 
+            this.lblPubTopic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPubTopic.AutoSize = true;
-            this.lblPubTopic.Location = new System.Drawing.Point(12, 171);
+            this.lblPubTopic.Location = new System.Drawing.Point(12, 174);
             this.lblPubTopic.Name = "lblPubTopic";
             this.lblPubTopic.Size = new System.Drawing.Size(70, 15);
             this.lblPubTopic.TabIndex = 6;
@@ -97,7 +102,7 @@
             // 
             // txtPubTopic
             // 
-            this.txtPubTopic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPubTopic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPubTopic.Location = new System.Drawing.Point(12, 194);
             this.txtPubTopic.Name = "txtPubTopic";
@@ -107,8 +112,9 @@
             // 
             // lblSendMessage
             // 
+            this.lblSendMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSendMessage.AutoSize = true;
-            this.lblSendMessage.Location = new System.Drawing.Point(12, 230);
+            this.lblSendMessage.Location = new System.Drawing.Point(12, 228);
             this.lblSendMessage.Name = "lblSendMessage";
             this.lblSendMessage.Size = new System.Drawing.Size(91, 15);
             this.lblSendMessage.TabIndex = 8;
@@ -116,6 +122,8 @@
             // 
             // txtSendMessage
             // 
+            this.txtSendMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSendMessage.Location = new System.Drawing.Point(12, 248);
             this.txtSendMessage.Multiline = true;
             this.txtSendMessage.Name = "txtSendMessage";
@@ -125,6 +133,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(438, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 25);

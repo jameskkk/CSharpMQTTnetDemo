@@ -37,6 +37,8 @@
             // 
             // btnStart
             // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStart.Location = new System.Drawing.Point(37, 27);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(102, 42);
@@ -47,7 +49,8 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(177, 27);
+            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStop.Location = new System.Drawing.Point(196, 27);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(102, 42);
             this.btnStop.TabIndex = 1;

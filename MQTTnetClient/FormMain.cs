@@ -87,7 +87,27 @@ namespace MQTTnetClient
 
         private void BtnSubscribe_ClickAsync(object sender, EventArgs e)
         {
+            string topic = txtSubTopic.Text.Trim();
 
+            if (string.IsNullOrEmpty(topic))
+            {
+                MessageBox.Show("Subscribe topic was empty!");
+                return;
+            }
+
+            if (!mqttClient.IsConnected)
+            {
+                MessageBox.Show("MQTT was disconnected！");
+                return;
+            }
+
+            mqttClient.SubscribeAsync(new List<TopicFilter> {
+                new TopicFilter(topic, MqttQualityOfServiceLevel.AtMostOnce)
+            });
+
+            txtReceiveMessage.AppendText($"Topic [{topic}] was subscribed" + Environment.NewLine);
+            txtSubTopic.Enabled = false;
+            btnSubscribe.Enabled = false;
         }
 
         private void BtnPublish_Click(object sender, EventArgs e)
@@ -96,7 +116,7 @@ namespace MQTTnetClient
 
             if (string.IsNullOrEmpty(topic))
             {
-                MessageBox.Show("Topic was empty!");
+                MessageBox.Show("Publish topic was empty!");
                 return;
             }
 
